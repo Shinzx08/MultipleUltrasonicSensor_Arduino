@@ -30,7 +30,7 @@ void SendSMS() {
   Serial.println("Sending SMS...");              
   sim800l.print("AT+CMGF=1\r");                 
   delay(100);
-  sim800l.print("AT+CMGS=\"+*********\"\r");
+  sim800l.print("AT+CMGS=\"+*********\"\r"); //change to target number
   delay(500);
   sim800l.print("Trashbin is full");       
   delay(500);
