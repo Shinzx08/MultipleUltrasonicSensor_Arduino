@@ -32,7 +32,7 @@ void SendSMS() {
   delay(100);
   sim800l.print("AT+CMGS=\"+*********\"\r");
   delay(500);
-  sim800l.print("SIM800l is working");       
+  sim800l.print("Trashbin is full");       
   delay(500);
   sim800l.print((char)26);
   delay(500);
