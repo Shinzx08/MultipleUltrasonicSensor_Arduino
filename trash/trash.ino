@@ -24,6 +24,7 @@ void loop(){
    if (sim800l.available()){            
     Serial.write(sim800l.read()); 
   }
+delay(10000);
 }
 
 void SendSMS() {
